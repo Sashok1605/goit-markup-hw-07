@@ -52,25 +52,6 @@
   }
 }
 
-// .team-title {
-//   color: $title-text-color;
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   margin: 0px;
-//   margin-bottom: 10px;
-// }
-
-// .team-text {
-//   color: var(--primary-text-color);
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   margin-bottom: 16px;
-// }
-
 .team-social {
   display: flex;
   justify-content: center;
@@ -102,12 +83,10 @@
   &:hover,
   &:focus {
     background-color: $accent-color;
-    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  > svg:hover,
-  > svg:focus {
-    fill: $secondary-text-color;
-    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    & > svg {
+      fill: $secondary-text-color;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
